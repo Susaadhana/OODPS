@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+class student
+{
+	private:
+		int roll;
+		string name;
+	public:
+		void getdata();
+		void display();
+};
+void student::getdata()
+{
+	cout<<endl;
+	cout<<"Enter Name:";
+	cin>>name;
+	cout<<"Enter Rollno:";
+	cin>>roll;
+}
+void student::display()
+{
+	cout<<endl;
+	cout<<"-----Details-----"<<endl;
+	cout<<"Name:"<<name<<endl;
+	cout<<"Roll no:"<<roll<<endl;
+}
+int main(){
+	student s1,s2;
+		s1.getdata();
+		s1.display();
+		s2.getdata();
+		s2.display();
+		return 0;
+}
